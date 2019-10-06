@@ -15,16 +15,52 @@
 	<meta property="og:site_name" content="TEST">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<!-- Preloader -->
+	<link rel="stylesheet" href="css/preloader.css">
 	<!-- Bootstrap Reboot CSS -->
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Lightbox -->
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<header class="header" id="header">
+
+	 <!-- Preloader: Start -->
+    <div id="page-preloader">
+        <div class="cssload-preloader cssload-loading">
+				<div id="cssload-wrapper">
+			<ul class="cssload-cssload-ballsncups">
+	<li>
+		<div class="cssload-circle"></div>
+		<div class="cssload-ball"></div>
+	</li>
+	<li>
+		<div class="cssload-circle"></div>
+		<div class="cssload-ball"></div>
+	</li>
+	<li>
+		<div class="cssload-circle"></div>
+		<div class="cssload-ball"></div>
+	</li>
+	<li>
+		<div class="cssload-circle"></div>
+		<div class="cssload-ball"></div>
+	</li>
+	<li>
+		<div class="cssload-circle"></div>
+		<div class="cssload-ball"></div>
+	</li>
+</ul>
+				</div>
+        </div>
+    </div>
+    <!-- Preloader: Finish -->
+
+	<header class="header" id="header" data-type="background" data-speed="3">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-12">
@@ -80,7 +116,7 @@
 			</div>
 		</div>
 	</header>
-
+	
 	<section id="features" class="features">
 		<div class="container">
 			<div class="row">
@@ -153,54 +189,60 @@
 			</div>
 		</div>
 	</section>
+	
+	<div class="wrapper-fix">
+	<a class="up go" href="#header">
+		<img src="img/elevator.png" alt="Easily Customised">
+	</a>
+	</div>
 
 	<section id="gallery" class="gallery">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 35.png">
+					<a class="gallery__link" href="img/travel.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 35.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 36.png">
+					<a class="gallery__link" href="img/books.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 36.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 37.png">
+					<a class="gallery__link" href="img/beach.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 37.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 38.png">
+					<a class="gallery__link" href="img/ring.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 38.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 39.png">
+					<a class="gallery__link" href="img/lib.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 39.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 40.png">
+					<a class="gallery__link" href="img/noutbuk.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 40.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 41.png">
+					<a class="gallery__link" href="img/thay.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 41.png" alt="project" class="gallery__img">
 					</a>
 				</div>
 				<div class="col-12 col-sm-6 col-lg-3">
-					<a class="gallery__link" href="img/Layer 42.png">
+					<a class="gallery__link" href="img/phuket.jpg" data-lightbox="slider" data-title="Описание фото">
 						<div class="gallery__overlay"><h4>Project Name</h4><span>User Interface Design</span></div>
 						<img src="img/Layer 42.png" alt="project" class="gallery__img">
 					</a>
@@ -373,7 +415,9 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/parallax-bg.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
 	<script src="js/main.js"></script>
 	</body>
 </html>

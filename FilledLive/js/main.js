@@ -1,6 +1,12 @@
 $(function () {
 
 
+			    // Preloader
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+
         // плавное перемещение страницы к нужному блоку
     $("a.go").click(function (e) {
         e.preventDefault();

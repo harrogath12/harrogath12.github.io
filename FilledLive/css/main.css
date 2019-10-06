@@ -94,7 +94,7 @@ button, button:hover, button:focus, button:active
 /*header*/
 
 .header {
-	background: #383840 url(../img/876628-chinatowny-streets.jpg) no-repeat center top / cover;;
+	background: #383840 url(../img/876628-chinatowny-streets.jpg) no-repeat fixed center top / cover;
 	color: #fff;
 	padding-top: 35px;
 	padding-bottom: 240px;
@@ -188,6 +188,31 @@ button, button:hover, button:focus, button:active
 .features__title {
 	margin: 25px 0 20px 0;
 }
+
+.wrapper-fix {
+		position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 999999999;
+    display: block;
+}
+
+.up img {
+	width: 40px;
+	height: 40px;
+	opacity: 0.6;
+}
+
+/*.up {
+		background: url(../img/elevator.png) no-repeat center top / cover;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		z-index: 999999999;
+		right: 0;
+}*/
+
+
 
 /*gallery*/
 
