@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HomeWork_7_adaptive</title>
+	<meta name="description" content="Домашнее задание7, коучинг - Код фрилансера">
+	<meta name="keywords" content="Wayup, homework, coding, css, bem, adaptive">
+	<link rel="icon" href="#">
+ 	<link rel="shortcut icon" href="#" type="image/x-icon"> 
+	<meta property="og:title" content="Домашнее задание_7 Обучение Верстке & Frontend">
+	<meta property="og:description" content="19 Августа. Выполняю ДЗ по верстке">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="#">
+	<meta property="og:site_name" content="TEST">
+		<!-- Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<!-- Preloader -->
+	<link rel="stylesheet" href="css/preloader.css">
+		<!-- Lightbox -->
+	<link rel="stylesheet" href="css/lightbox.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- Preloader: Start -->
+    <div id="page-preloader">
+        <div class="cssload-preloader cssload-loading">
+				<div id="cssload-wrapper">
+			<div class="cssload-coffee">
+	</div>
+				</div>
+        </div>
+    </div>
+    <!-- Preloader: Finish -->
+	<header class="header" id="header" data-type="background" data-speed="3">
+		<div class="container">
+			<div class="header__navigation d-flex justify-content-between">
+				<a href="#header" class="header__logo"><span>My</span>Portfolio</a>
+				<ul class="header__nav menu d-flex d-none menu-collapse">
+					<li class="menu__item">
+						<a href="#about" class="header__link go">Обо мне</a>
+					</li>
+					<li class="menu__item">
+						<a href="#skills" class="header__link go">Навыки</a>
+					</li>
+					<li class="menu__item">
+						<a href="#works" class="header__link go">Работы</a>
+					</li>
+				</ul>
+				<a href="#" class="header__mail">info@myname.com</a>
+				 <button class="menu-open">
+              <i class="fas fa-bars"></i>
+             </button>
+			</div>
+			<div class="header__titles fadeInRight animated">
+				<h1 class="header__main-title">Дело, которым я живу</h1>
+				<p class="header__title">верстка & frontend</p>
+			</div>	
+			<a href="#about" class="header__arrow go">↓</a>
+		</div>
+	</header>
+
+	<section class="about" id="about">
+		<div class="container">
+			<h2>Обо мне</h2>
+				<div class="about__info d-flex justify-content-between">
+					<div class="background animated">
+						<h3 class="background__title">Бэкграунд</h3>
+						<p class="background__txt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+						</p>
+						<p class="background__txt">
+							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
+						</p>
+						<p class="background__txt">
+							Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa quiis aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in is aute irure dolor in reprehenderit in.
+						</p>
+					</div>
+					<div class="more">
+						<div class="merit">
+							<h3 class="merit__title">Заслуги</h3>
+							<div class="merit__wrapper d-flex justify-content-between">
+								<div class="merit__item animated">
+									<div class="merit__digit d-flex"><span>75</span></div>
+									<p class="merit__txt">Реализованных проектов</p>
+								</div>
+								<div class="merit__item animated">
+									<div class="merit__digit d-flex"><span>154</span></div>
+									<p class="merit__txt">Положительных отзыва</p>
+								</div>
+								<div class="merit__item animated">
+									<div class="merit__digit d-flex"><span>8</span></div>
+									<p class="merit__txt">Лет опыта</p>
+								</div>
+							</div>
+						</div>
+						<div class="connection">
+							<h3 class="connection__title">Связь</h3>
+							<div class="connection__wrapper d-flex justify-content-between align-items-center">
+								<div class="connection__links">
+									<a href="#info" class="connection__link">freelance.ru/myname</a>
+									<a href="#info" class="connection__link">vk.com/12343</a>
+									<a href="#info" class="connection__link">info@sitename.ru</a>
+								</div>
+								<div class="connection__write d-flex align-items-center">
+									<img src="img/icon.png" alt="write to us" class="connection__icon">
+									<p class="connection__txt">Не стесняйтесь, пишите</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section class="skills" id="skills">
+		<div class="container">
+			<h2>Навыки</h2>
+				<div class="skills__list d-flex justify-content-between">
+						<div class="skills__item d-flex align-items-center">
+							<div class="skills__digit d-flex">98%</div>
+							<div class="skills__txt">photoshop</div>
+						</div>
+						<div class="skills__item d-flex align-items-center">
+							<div class="skills__digit d-flex">99%</div>
+							<div class="skills__txt">html5</div>
+						</div>
+						<div class="skills__item d-flex align-items-center">
+							<div class="skills__digit d-flex">100%</div>
+							<div class="skills__txt">css3</div>
+						</div>
+						<div class="skills__item d-flex align-items-center">
+							<div class="skills__digit d-flex">0%</div>
+							<div class="skills__txt">лень</div>
+						</div>
+				</div>
+		</div>
+	</section>
+
+	<section class="works" id="works">
+		<div class="container">
+			<h2>Работы</h2>
+			<div class="works__work d-flex justify-content-between">
+				<a class="works__wrapper animated" href="img/home-office-336377_1920.jpg" data-lightbox="slider" data-title="Описание фото">
+					<div class="works__overlay"><h4>Название работы</h4><span>смотреть</span></div>
+					<img src="img/324ovg.png" alt="work" class="works__img">
+				</a>
+				<a class="works__wrapper animated" href="img/architecture-2804083_1280.jpg" data-lightbox="slider" data-title="Описание фото">
+					<div class="works__overlay"><h4>Название работы</h4><span>смотреть</span></div>
+					<img src="img/34mvn5nt1ls-thomas-lefebvre.png" alt="work" class="works__img">
+				</a>
+				<a class="works__wrapper animated" href="img/laptop-2434393_1920.jpg" data-lightbox="slider" data-title="Описание фото">
+					<div class="works__overlay"><h4>Название работы</h4><span>смотреть</span></div>
+					<img src="img/gqrc.png" alt="work" class="works__img">
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<footer class="footer" id="foonter">
+		<div class="container">
+			<p class="footer__txt">Не стесняйтесь, пишите</p>
+		</div>
+	</footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/parallax-bg.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
